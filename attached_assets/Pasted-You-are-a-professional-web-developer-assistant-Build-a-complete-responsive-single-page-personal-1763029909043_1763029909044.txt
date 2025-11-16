@@ -1,0 +1,81 @@
+You are a professional web developer assistant. 
+Build a complete, responsive, single-page personal portfolio website for **Mr. Hulas Pathak** using modern, clean UI design.  
+Use HTML + CSS + JavaScript (or React if needed).  
+I will upload his LinkedIn profile image separately — use it in the hero section.
+
+Here are the required sections and details:
+
+=========================================
+PAGE REQUIREMENTS
+=========================================
+
+1. **Hero Section**
+- Full-width hero with his profile picture (I will upload it)
+- Name: **Hulas Pathak**
+- Title: **Entrepreneur | Agri Business Leader | Public Speaker**
+- Subline: "Passionate about agriculture development, farmer empowerment, and innovation in rural India."
+- Add a clean CTA button: “Connect with Me on LinkedIn” (use placeholder URL for now)
+
+2. **About Section**
+Short biography (fill with clean, professional placeholder text):
+“Hulas Pathak is a highly respected voice in agriculture, entrepreneurship and social leadership, known for empowering youth, guiding rural innovators, and supporting India’s agricultural transformation.”
+
+3. **Achievements Section**
+Create 3–5 visually appealing cards with icons:
+- 15+ Years Experience in Agriculture & Rural Development
+- Known Public Speaker in Agri & Entrepreneurship Events
+- Mentor to Youth, Students, and Aspiring Founders
+- Leadership in Multiple Social Initiatives
+- Strong Network Across Agriculture & Startup Ecosystem
+
+4. **Timeline / Journey Section**
+Create a vertical timeline with clean styling showing career progression (use placeholder years):
+- 2010 – Started journey into Agriculture Leadership  
+- 2015 – Expanded into Entrepreneurship & Training Programs  
+- 2018 – Recognized for Rural Youth Empowerment Initiatives  
+- 2022 – Invited as Speaker at Major Agri & Startup Events  
+- 2024 – Leading Digital Agri Awareness Programs  
+
+5. **Gallery / Media Section**
+Add a simple 3-image grid with placeholder images (I will replace later).  
+Text: “Moments from events, talks, and interactions.”
+
+6. **Social Links Section**
+Add clean modern icons:
+- LinkedIn icon → placeholder link
+- Instagram → placeholder
+- Email button → placeholder (mailto:)
+
+7. **Footer**
+Minimal footer:
+“Designed with respect by Priyansh | © 2025”
+
+=========================================
+STYLE REQUIREMENTS
+=========================================
+
+- Modern, elegant, minimalistic look
+- White background + soft agritech green accents (#1AA260 or similar)
+- Use Google Font: 'Poppins' or 'Inter'
+- Fully responsive on mobile
+- Smooth scroll for section navigation
+- Add subtle hover animations on buttons/cards
+- Use clean spacing, large hero text, rounded corners (border-radius: 12–20px)
+- No clutter, no large paragraphs
+
+=========================================
+OUTPUT REQUIREMENTS
+=========================================
+
+- Provide complete code with comments
+- File structure:
+    index.html
+    style.css
+    script.js (if needed)
+    assets/ (for placeholder images)
+- Include instructions on where to place the profile image I will upload
+- Include notes on how to deploy on Replit or Vercel
+
+=========================================
+
+Build the full one-page site now.
