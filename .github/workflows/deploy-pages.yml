@@ -28,6 +28,11 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: List build output
+        run: |
+          echo "Listing dist/public contents"
+          ls -la dist/public || true
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v3
 
@@ -38,3 +43,25 @@ jobs:
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
+
+  # Fallback: push built files to gh-pages branch if Pages artifact action fails
+  publish-gh-pages:
+    needs: build-and-deploy
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Ensure built files exist
+        run: |
+          echo "Checking dist/public before gh-pages publish"
+          ls -la dist/public
+
+      - name: Publish to gh-pages (fallback)
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist/public
+          publish_branch: gh-pages
+          commit_message: "Publish to gh-pages (fallback)"
